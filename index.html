@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+  <div class="container">
+      <h2 class = "watermark">ABHYUDAYA</h2>
+    
+    <div>
+      <h1 class="header_text">Just wondering if you have plans for Feb 14? I’m thinking about doing something with you ;) Will you be my Valentine?
+      </h1>
+    </div>
+    <div class="gif_container">
+      <img src="https://media.tenor.com/WQjlw86rlpsAAAAC/muah-kiss.gif" alt="Cute animated illustration" />
+    </div>
+    <div class="buttons">
+      <button class="btn" id="yesButton"
+        onclick="window.location.href = 'https://wa.me/6266061914?text=HEHE THANKSSS! I LOVE YOU <3';">Yes</button>
+      <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">
+        No
+      </button>
+
+      <script>
+
+        function moveButton() {
+          var x =
+            Math.random() *
+            (window.innerWidth -
+              document.getElementById("noButton").offsetWidth);
+          var y =
+            Math.random() *
+            (window.innerHeight -
+              document.getElementById("noButton").offsetHeight);
+          document.getElementById("noButton").style.left = `${x}px`;
+          document.getElementById("noButton").style.top = `${y}px`;
+        }
+      </script>
+      <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          z-index: 0;
+
+          background: linear-gradient(rgb(249, 0, 224), rgb(229, 71, 161), rgb(229, 71, 74), rgb(109, 5, 14));
+        }
+
+        #noButton {
+          position: absolute;
+          margin-left: 150px;
+          transition: 0.5s;
+          margin-top: 30px;
+        }
+        .watermark{
+          position: absolute;
+    font-family: "Nunito";
+    font-size: 180px;
+    color: rgba(210, 203, 203, 0.364);
+    z-index: 1;
+    padding-inline: 400px;
+
+        }
+      
+
+        #yesButton {
+          position: absolute;
+          margin-right: 150px;
+          margin-top: 30px;
+        }
+
+        .header_text {
+          font-family: "Nunito";
+          font-size: 50px;
+          font-weight: bold;
+
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          color: #ffffff;
+        }
+
+        .text {
+          font-family: "Nunito";
+          font-size: 25px;
+          font-weight: bold;
+          color: white;
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 0px;
+        }
+
+        .buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+          margin-left: 20px;
+        }
+
+        .btn {
+          background-color: #017cff;
+          color: white;
+          font-weight: 600;
+          padding: 15px 32px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border: none;
+          border-radius: 12px;
+          transition: background-color 0.3s ease;
+          box-shadow: 0 3px 3px black;
+        }
+
+        .btn:hover {
+          background-color: #ffffff;
+          color: #017cff;
+        }
+
+        .gif_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        p {
+          color: white;
+          margin-left: 50%;
+        }
+
+        p a {
+          color: rgb(255, 255, 255);
+          font-size: 20px;
+          font-weight: 600;
+          opacity: 0.25;
+        }
+      </style>
+    </div>
+  </div>
+</body>
+
+</html>
